@@ -6,7 +6,7 @@ from azure.mgmt.resource import ResourceManagementClient
 # Service Principal
 tenant =  os.environ['AZURE_TENANT_ID']
 client_id = os.environ['AZURE_CLIENT_ID'] 
-password = os.environ['AZURE_CLIENT_SECRET' 
+password = os.environ['AZURE_CLIENT_SECRET']
 
 # Public Azure - default values
 authentication_endpoint = 'https://login.microsoftonline.com/'
