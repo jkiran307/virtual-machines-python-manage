@@ -10,6 +10,7 @@ node {
            export AZURE_CLIENT_SECRET=$AZURE_CLIENT_SECRET
            export AZURE_SUBSCRIPTION_ID=$AZURE_SUBSCRIPTION_ID
            echo $AZURE_SUBSCRIPTION_ID
+           pip install -r requirement.txt
            python example.py
          '''
      }
