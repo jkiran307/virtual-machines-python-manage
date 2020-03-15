@@ -34,3 +34,8 @@ resource_group_params = {'location':'Southindia'}
 # Creating resource group
 
 client.resource_groups.create_or_update('azure-sample-group', resource_group_params)
+
+try:
+  client.resource_groups.create_or_update('azure-sample-group', resource_group_params)
+except:
+  print("Resource Group already present")
