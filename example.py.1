@@ -4,9 +4,9 @@ from msrestazure.azure_active_directory import AdalAuthentication
 from azure.mgmt.resource import ResourceManagementClient
 
 # Service Principal
-tenant = '188285f7-8f1e-4c0d-a0bc-797e3e38c5b3'
-client_id = 'af9ea983-e41d-4c73-a95b-d18dcbd8c3ab'
-password = 'RL3xR1I4P4ze.@]yviEvYgzHALxjGmi@'
+tenant = 'AZURE_TENANT_ID'
+client_id = 'AZURE_CLIENT_ID'
+password = 'AZURE_CLIENT_SECRET'
 
 # Public Azure - default values
 authentication_endpoint = 'https://login.microsoftonline.com/'
@@ -19,7 +19,7 @@ credentials = AdalAuthentication(
     client_id,
     password
 )
-subscription_id = '4de07295-d5e2-47cb-baf7-cb35f0ef99dc'
+subscription_id = 'AZURE_SUBSCRIPTION_ID'
 
 resource_client = ResourceManagementClient(
     credentials,
